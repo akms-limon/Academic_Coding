@@ -1,37 +1,33 @@
+#include <math.h>
+
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-double f(double x)
-{
-    return x * x * x + 3 * x * x - 5 * x + 1;
+float fn(float x) {
+    return x * x + (3 * x) + 1;
 }
 
-double dF(double x)
-{
-    return 3 * x * x + 6 * x - 5;
+float de(float x) {
+    return 2 * x + 3;
 }
 
-int main()
-{
-    float es, r, e = 0, rold;
-    cout << "Function is x^3 + 3x^2 - 5x + 1" << endl;
-    cout << "Estimate root: ";
-    cin >> rold;
-
-    cout << "Estimate error: ";
+int main() {
+    float a, e = 0, z;
+    cout << "Function is x^2 + 3x + 1" << endl;
+    cout << "Enter Number: ";
+    cin >> a;
+    float es, err;
+    cout << "Estimate precision: ";
     cin >> es;
 
-    float er;
-    do
-    { 
-        rold = r;
-        r = rold - (f(rold) / dF(rold));
-        er = fabs((r - rold) / r) * 100;
+    do {
         e++;
-    } while (er > es);
+        z = a - (fn(a) / de(a));
+        err = fabs((z - a) / z) * 100;
+        cout << "The iterative " << e << " root is " << z << " error is " << err << endl;
+        a = z;
+    } while (err > es);
 
-    cout << "Root is " << r << endl;
-    
+    cout << "The root is " << z << endl;
     return 0;
 }
