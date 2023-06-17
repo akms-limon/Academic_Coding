@@ -14,10 +14,6 @@ double f(double x){
 }
 
 double Bisection(double a,double b, double ea){
-    if(f(a)*f(b)>=0){
-        printf("There will no solution between this two point.\n");
-        return 0;
-    }
     double ca=1, c=b, c0;
     while(ca>ea){
         c0 = c;
