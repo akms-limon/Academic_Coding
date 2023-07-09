@@ -18,15 +18,16 @@ double cnterror(double c0,double c){
 }
 
 double NewtonRaphson(double c0, double ea){
-    double ca=1,c=c0;
+    double ca=1,c;
     while(ca>ea){
-        c0=c;
         c=c0-(f(c0)/df(c0));
         if(f(c)==0) break;
         ca=cnterror(c0,c);
+        c0 = c;
     }
     return c;
 }
+
 int main() {
     double c0, ea = 0.000001;
     cin>>c0;

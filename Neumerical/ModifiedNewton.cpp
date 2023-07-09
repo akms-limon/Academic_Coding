@@ -37,6 +37,5 @@ int main() {
     cin>>c0;
     double root=ModifiedNewton(c0,ea);
     cout<<root<<endl;
-    cout<<f(root)<<endl;
     return 0;
 }

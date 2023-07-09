@@ -18,14 +18,12 @@ double g(double x){
 }
 
 double FixedPosition(double c0, double ea){
-    double ca = 1, c=c0;
+    double ca = 1, c;
     while(ca>ea){
-        c0 = c;
         c = g(c0);
-        if(f(c)==0) {
-            break;
-        }
+        if(f(c)==0) break;
         ca = cnterror(c, c0);
+        c0 = c;
     }
     return c;
 }
