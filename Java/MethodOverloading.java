@@ -1,6 +1,6 @@
 /*Method overloading is called if we make method with same name.
- we can overload method depending on parameters. and it works also 
- depending on parameters.
+we can overload method depending on parameters. and it works also
+depending on parameters.
 */
 
 public class MethodOverloading {

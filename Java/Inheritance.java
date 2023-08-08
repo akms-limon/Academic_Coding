@@ -1,12 +1,12 @@
-/*Inheritance means create a new object or class using the existing class 
-re-using the existing class. It is a prossess of acuring the features of an existing class 
+/*Inheritance means create a new object or class using the existing class
+re-using the existing class. It is a prossess of acuring the features of an existing class
 into a new class.*/
 class circle{
-    public int redius; 
+    public int redius;
 }
 
 class cylinder extends circle{
-    public int height; 
+    public int height;
 }
 
 public class Inheritance {

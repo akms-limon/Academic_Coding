@@ -51,7 +51,7 @@ class MySmartPhone2 extends MyCellPhone2 implements Wifi2, Camera2{
 }
 public class Polymorphism {
     public static void main(String[] args) {
-        Camera2 c = new MySmartPhone2(); // c is a smartphone but use it as a camera 
+        Camera2 c = new MySmartPhone2(); // c is a smartphone but use it as a camera
         c.takesnap();
         c.record4kVideo2();
         // c.getNetworks(); Not allowed

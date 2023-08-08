@@ -1,9 +1,9 @@
-/*constructor : Constructor is a method of a class it is automatically called when an object is created. 
- *every class has a default constructor. If we Declare a constructor then default constructor is deleted. 
+/*constructor : Constructor is a method of a class it is automatically called when an object is created.
+ *every class has a default constructor. If we Declare a constructor then default constructor is deleted.
  *constructor is similier to method. Constructor name and the class name is same. we can override constructor
  *like method. usualy constructor and method are same.
- * constructor is need to pre-initialize data. for example if I go to 
- * buy a car. when I buing the car Ofcourse the car have to a colour and all other properties
+ * constructor is need to pre-initialize data. for example if I go to
+ * buy a car. when I buing the car ofcourse the car have to a colour and all other properties
  * by constructor we can pre-defined these properties.
  */
 
@@ -34,7 +34,7 @@ class MyEmployee{
 public class Constractor {
     public static void main(String[] args) {
         MyEmployee limon = new MyEmployee();
-        // limon.setName("mahmud");   
+        // limon.setName("mahmud");
         // limon.setId(200117);
         System.out.println(limon.getName());
         System.out.println(limon.getId());

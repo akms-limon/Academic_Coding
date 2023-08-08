@@ -1,24 +1,21 @@
 class Employee{
-    int id; 
+    int id;
     String name;
-    public void printDetails(){
-        System.out.println("My ID is : "+ id);
-        System.out.println("My name is : "+ name);
+    public void printdetails(){
+        System.out.println("Name : "+name);
+        System.out.println("ID : "+id);
     }
 }
 
-public class CustomClass {
+public class CustomClass{
     public static void main(String[] args) {
-
         Employee limon = new Employee();
-        limon.id = 200117;
-        limon.name = "A K M S Limon";
-        
-        Employee harry = new Employee();
-        harry.id = 12345; 
-        harry.name = "CodeWithHarry";
-
-        limon.printDetails();
-        harry.printDetails();
+        limon.id = 384;
+        limon.name = "Limon";
+        limon.printdetails();
+        Employee Harry = new Employee();
+        Harry.id = 457;
+        Harry.name = "Harry";
+        Harry.printdetails();
     }
 }

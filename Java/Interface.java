@@ -16,14 +16,17 @@ class Base{
 
 class AvonCycle extends Base implements Bicycle, Cyclename{
     int speed = 5;
+    @Override
     public void applyBrake(int decrement){
         speed = speed - decrement;
         System.out.println("After speed down speed is : "+speed);
     }
+    @Override
     public void speedUP(int increment){
         speed = speed + increment;
         System.out.println("After speed up speed is : "+speed);
     }
+    @Override
     public void name(){
         System.out.println("I am a Bicycle");
     }

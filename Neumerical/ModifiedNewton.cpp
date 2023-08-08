@@ -10,15 +10,15 @@ double cnterror(double c,double c0){
 }
 
 double f(double x){
-    return x*x*x+1.2*x*x-4*x-4.8;
+    return 3*x-cos(x)-1;
 }
 
 double dif1(double x){
-    return 3*x*x+2.4*x-4;
+    return 3+sin(x);
 }
 
 double dif2(double x){
-    return 6*x+2.4;
+    return cos(x);
 }
 
 double ModifiedNewton(double c0,double ea){
@@ -33,8 +33,7 @@ double ModifiedNewton(double c0,double ea){
 }
 
 int main() {
-    double c0,ea=0.0000000001;
-    cin>>c0;
+    double c0=0,ea=0.0000000001;
     double root=ModifiedNewton(c0,ea);
     cout<<root<<endl;
     return 0;

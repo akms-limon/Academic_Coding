@@ -1,12 +1,12 @@
 /*Everythins in the real world is a object. Object has two things : 1. properties 2.behaviors
-Write a essay and find the nown and adjective there are the properties or attributes. and find verbs, verbs is 
-the behaviours or method. 
+Write a essay and find the noun and adjective they are the properties or attributes. and find verbs, verbs is
+the behaviours or method.
 
-Difference between class and objects : 
+Difference between class and objects :
             class                                                objects
-class is a design of a house and car            Objects is the house we make. we can make many house by the 
+class is a design of a house and car            Objects is the house we make. we can make many house by the
                                                 design.
-*/ 
+*/
 class Teacher {
     int salary;
     String name;

@@ -67,7 +67,7 @@ public class Exercise1 {
         while(true){
             int p = l.input();
             if(p==1) l.addBook();
-            else if(p==2) l.issueBook();    
+            else if(p==2) l.issueBook();
             else if(p==3) l.returnBook();
             else if(p==4) l.showAvailableBooks();
             else if(p==5) l.showIssuedBooks();

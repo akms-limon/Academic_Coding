@@ -58,5 +58,5 @@ public class DefaultMethodinInterface {
             System.out.println(s);
         }
         ms.record4kVideo();
-    }   
+    }
 }
