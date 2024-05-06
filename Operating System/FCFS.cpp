@@ -30,9 +30,9 @@ int main(){
         tat[i] = ct[i] - v[i - 1].first;
         wt[i] = tat[i] - v[i - 1].second.second;
     }
-    cout << "Process    " << "AT    " << "BT    " << "CT    " << "TAT    " << "WT    " << '\n';
+    cout << "Process\t\t" << "AT\t" << "BT\t" << "CT\t" << "TAT\t" << "WT\t" << '\n';
     for (int i = 1; i <= n; i++) {
-        cout << v[i - 1].second.first << "         " << v[i - 1].first << "     " << v[i - 1].second.second << "     " << ct[i] << "      " << tat[i] << "     " << wt[i] << '\n';
+        cout << v[i - 1].second.first << "\t\t" << v[i - 1].first << "\t" << v[i - 1].second.second << "\t" << ct[i] << "\t" << tat[i] << "\t" << wt[i] << '\n';
     }
     return 0;
 }
